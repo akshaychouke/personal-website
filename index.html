@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akshay Chouke</title>
+  <link rel="stylesheet" href="/CSS/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <!-- Navbar Section -->
+  <div class="nvb">
+    <nav class="nav_bar">
+      <div class="icon"><a href="index.html"><i class="fa-solid fa-code-branch fa-2x"></i></a></div>
+      <ul class="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#cert">Honour & Certfications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="left_nav">
+        <div class="nav_btn"><i class="fa-solid fa-bars bar_icon"></i></div>
+        <div class="nav_btn"><i class="fa-sharp fa-solid fa-xmark close_icon"></i></div>
+        <!-- <a href="resume.pdf" class="resume_btn">Resume</a> -->
+      </div>
+    </nav>
+  </div>
+
+
+  <!-- About Section -->
+  <div class="abt">
+    <div class="about" id="about">
+      <div class="left"><img src="/Images/p41.jpg" alt="profile" id="profile"></div>
+      <div class="right">
+        <p>Hi I am,</p>
+        <h2>Akshay Chouke</h2>
+        <span class="typing"></span>
+        <p>I am an Integrated M.Tech Computer Science and Engineering student with specialization in Cyber security
+          at VIT Bhopal University. Currently, I am an intermediate learner
+          of Web development and Penetration testing. I have intermediate knowledge of c++, java, and python. My passion
+          for learning comes from my experience as a learner who always confronted my own learning differences.</p>
+        <p><span>Connect With Me </span> <i class="fa-solid fa-circle-arrow-right"></i></p>
+        <p class="social"><a href="https://www.linkedin.com/in/akshay-chouke-02103a213/" target="_blank"><i
+              class="fa-brands fa-linkedin-in fa-2x"></i></a> <a href="https://github.com/imakshay09" target="_blank"><i
+              class="fa-brands fa-github fa-2x"></i></a> <a href="https://www.instagram.com/akshaychauke50/"
+            target="_blank"> <i class="fa-brands fa-instagram fa-2x"></i></a> <a target="_blank"
+            href="mailto: akshaychauke50@gmail.com"> <i class="fa-solid fa-envelope fa-2x"></i></a></p>
+      </div>
+    </div>
+  </div>
+  <!-- <img src="/Images/curve_line.svg" alt="" class="divider"> -->
+
+
+
+  <!-- Skills Section -->
+
+  <div class="skills" id="skills">
+    <div class="head">
+      <h2>Skills</h2>
+      <p>Here are my Skills</p>
+    </div>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active w-50" data-bs-interval="2000">
+          <img src="../Images/linux.png" class="linux" alt="Linux">
+          <h3>Linux</h3>
+        </div>
+        <div class="carousel-item w-50" data-bs-interval="2000">
+          <img src="../Images/react.png" class="react" alt="React Development">
+          <h3>React development</h3>
+        </div>
+        <div class="carousel-item w-50" data-bs-interval="2000">
+          <img src="../Images/HCJ.png" class="hcj" alt="HTML, CSS, JavaScript">
+          <h3>HTML,CSS And JavaScript</h3>
+        </div>
+        <div class="carousel-item w-50" data-bs-interval="2000">
+          <img src="https://cdn.iconscout.com/icon/free/png-512/jquery-9-1175154.png?f=avif&w=256" class="d-block jq"
+            alt="HTML, CSS, JavaScript">
+          <h3>JQuery</h3>
+        </div>
+        <div class="carousel-item w-50" data-bs-interval="2000">
+          <img src="https://cdn.iconscout.com/icon/free/png-512/c-4-226082.png?f=avif&w=256" class="d-block cpp"
+            alt="HTML, CSS, JavaScript">
+          <h3>C++</h3>
+        </div>
+        <div class="carousel-item w-50" data-bs-interval="2000">
+          <img src="https://cdn.iconscout.com/icon/free/png-512/mysql-3521596-2945040.png?f=avif&w=256"
+            class="d-block sql" alt="HTML, CSS, JavaScript">
+          <h3>MySql</h3>
+        </div>
+      </div>
+      <button type="button" class="carousel-control-prev" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button type="button" class="carousel-control-next" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+
+  <!-- Tools section starts here -->
+
+  <div class="tools" id="tools">
+    <div class="phead" style="margin-bottom: 30px;">
+      <h3>Tools</h3>
+      <span>Here are some tools I know </span>
+    </div>
+    <div class="row row-cols-1 row-cols-md-6 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="../Images/vs.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">VsCode</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../Images/gpt.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">ChatGPT</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../Images/msf.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Metasploit</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../Images/eclipse.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Eclipse</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../Images/git.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Git</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../Images/vbox.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">VirtualBox</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project section start here -->
+  <div class="projects" id="projects">
+    <div class="phead" style="margin-bottom: 30px;">
+      <h3>Projects</h3>
+      <span>Some of my projects are </span>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">TODO List </h5>
+            <p class="card-text">This project is development using the React JS liabrary.In this project user can make
+              List of all the things he has to do.When he complets the task he can also remove that perticular task as
+              well. </p>
+            <p><a href="https://github.com/imakshay09?tab=repositories" target="_blank"
+                style="text-decoration-line: none;">Link</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Hash Genertator</h5>
+            <p class="card-text">This is a tool which is developed in python.Using this tool user can generate six
+              diffrent types of hashes of text at a same time,or he can generate one at time as well. </p>
+            <p><a href="https://github.com/imakshay09/CybersecProjects/blob/main/hash_generator.py" target="_blank"
+                style="text-decoration-line: none;">Link</a></p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Directory-BruteForcer</h5>
+            <p class="card-text">This is a tool which is developed in python. Using this user can brute force all the
+              directories in the given wordlist.If the directory is present in the website then it will print link for
+              that directory.</p>
+            <p><a href="https://github.com/imakshay09/CybersecProjects/tree/main/Directory-BruteForcer" target="_blank"
+                style="text-decoration-line: none;">Link</a></p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Honour & Certfications Section starts here -->
+  <div class="cert" id="cert">
+    <div class="crhead" style="margin-bottom: 30px;">
+      <h3>Honour & Certfications</h3>
+      <span>Here are some of my Certfications I have received</span>
+    </div>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="../Images/Front_End.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Introduction to Front-End Development</h5>
+            <p class="card-text"><strong>Issued By Meta at Coursera</strong> <br> Nov 18,2022</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../Images/js.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Programming with JavaScript</h5>
+            <p class="card-text"><strong>Issued By Meta at Coursera</strong> <br> Feb 11,2023 </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../Images/vc.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Version Control</h5>
+            <p class="card-text"><strong>Issued By Meta at Coursera</strong> <br> Jan 8,2023</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../Images/cysec.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">IT Fundamentals for
+              Cybersecurity</h5>
+            <p class="card-text"><strong>Issued By IBM at Coursera</strong> <br> Sep 22,2022</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact section starts here -->
+  <div class="contact" id="contact">
+    <div class="crhead" style="margin-bottom: 30px;">
+      <h3>Contact</h3>
+      <span>Write your query here </span>
+    </div>
+    <div class="frm">
+      <form action="">
+        <label for="name"></label>
+        <input type="text" name="name" id="name" placeholder="Name" required>
+        <label for="mail"></label>
+        <input type="email" name="mail" id="mail" placeholder="Email" required>
+        <label for="sub"></label>
+        <input type="text" name="sub" id="sub" placeholder="Subject" required>
+        <label for="message"></label>
+        <input type="text" name="message" id="message" placeholder="Message" required>
+        <label for="submit"></label>
+        <button type="submit" name="submit" id="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- Footer section starts here -->
+  <footer>
+    <div class="foot">
+      <div class="above">
+        <ul class="list2">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#cert">Honour & Certfications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <span class="cpr">Copyright © 2023 Akshay Chouke. All Right Reserved</span>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="/JS/script.js"></script>
+</body>
+
+</html>
