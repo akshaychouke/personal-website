@@ -82,10 +82,6 @@ ul li a:hover {
   width: 100vw;
   background-color: #332c39;
 }
-/* .active .icon{
-    display: none;
-    visibility: hidden;
-} */
 .active1 .list {
   display: block;
   visibility: visible;
@@ -109,8 +105,6 @@ ul li a:hover {
 /* ABout section designing */
 .about {
   padding: 10%;
-  /* width: 100vw;
-  height: 30vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,20 +115,11 @@ ul li a:hover {
   border: none;
   border-radius: 20px;
 }
-/* .left,
-.right {
-  width: max-content;
-  height: auto;
-  display: inline-block;
-} */
 .left {
   position: relative;
   right: 5rem;
 }
 .right {
-  /* width: 30vw; */
-  /* position: relative;
-  bottom: 3rem; */
   color: white;
 }
 .social a i {
@@ -200,6 +185,23 @@ ul li a:hover {
 }
 .tools .col:hover {
   padding: 20px;
+}
+.grid_container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  column-gap: 20px;
+  row-gap: 10px;
+}
+.grid_container .col img {
+  width: 10rem;
+}
+.grid_container .col {
+  border: 2px solid white;
+  padding: 10px;
+  width: max-content;
+}
+.grid_container .col h5 {
+  text-align: center;
 }
 
 /* Designing the project section */
@@ -313,6 +315,9 @@ ul li a {
   .carousel-item {
     margin: auto 20rem;
   }
+  .grid_container {
+    grid-template-columns: auto auto auto auto auto;
+  }
 }
 
 @media screen and (max-width: 1010px) {
@@ -360,12 +365,19 @@ ul li a {
   .sql {
     margin: auto 10rem;
   }
+  .grid_container {
+    grid-template-columns: auto auto auto auto;
+    row-gap: 15px;
+  }
   @media screen and (max-width: 910px) and (min-width: 820px) {
     .carousel-item {
       margin: auto 14rem;
     }
     .carousel-item img {
       margin: auto 5rem;
+    }
+    .grid_container {
+      grid-template-columns: auto auto auto auto;
     }
   }
 
@@ -407,6 +419,12 @@ ul li a {
     .foot {
       margin: auto 5rem;
     }
+    .grid_container {
+      grid-template-columns: auto auto auto;
+      column-gap: 15px;
+      row-gap: 15px;
+    }
+
     @media screen and (max-width: 790px) and (min-width: 640px) {
       .left {
         margin: auto 150px;
@@ -431,6 +449,13 @@ ul li a {
       }
       #submit {
         margin: auto 9rem;
+      }
+
+      .grid_container {
+        grid-template-columns: auto auto auto;
+      }
+      .grid_container .col img {
+        width: 9rem;
       }
     }
     @media screen and (max-width: 640px) {
@@ -457,6 +482,14 @@ ul li a {
       #submit {
         margin: auto 8rem;
       }
+      .grid_container {
+        grid-template-columns: auto auto auto;
+        column-gap: 10px;
+        row-gap: 10px;
+      }
+      .grid_container .col img {
+        width: 9rem;
+      }
     }
     @media screen and (max-width: 590px) and (min-width: 520px) {
       .carousel-item img {
@@ -464,6 +497,17 @@ ul li a {
       }
       .carousel-item {
         margin: auto 8.5rem;
+      }
+      .grid_container {
+        grid-template-columns: auto auto auto;
+      }
+      .grid_container .col img {
+        width: 7.5rem;
+      }
+      .grid_container .col {
+        border: 2px solid white;
+        padding: 7.5px;
+        width: max-content;
       }
     }
 
@@ -495,6 +539,17 @@ ul li a {
       .foot {
         margin: auto 3.5rem;
       }
+      .grid_container {
+        grid-template-columns: auto auto auto;
+      }
+      .grid_container .col img {
+        width: 7.5rem;
+      }
+      .grid_container .col {
+        border: 2px solid white;
+        padding: 7.5px;
+        width: max-content;
+      }
       @media screen and (max-width: 490px) and (min-width: 400px) {
         .carousel-item {
           margin: auto 7.5rem;
@@ -512,7 +567,6 @@ ul li a {
         #name,
         #mail {
           display: block;
-          /* width: 80%; */
         }
         #name,
         #mail,
@@ -529,6 +583,16 @@ ul li a {
         #submit:hover {
           background: none;
         }
+        .grid_container {
+          grid-template-columns: auto auto auto;
+        }
+        .grid_container .col img {
+          width: 6rem;
+        }
+        .grid_container .col {
+          padding: 7px;
+          width: max-content;
+        }
       }
       @media screen and (max-width: 480px) and (min-width: 400px) {
         .carousel-item img {
@@ -536,6 +600,16 @@ ul li a {
         }
         .carousel-item {
           margin: auto 6.5rem;
+        }
+        .grid_container {
+          grid-template-columns: auto auto;
+        }
+        .grid_container .col img {
+          width: 8.5rem;
+        }
+        .grid_container .col {
+          padding: 10px;
+          width: max-content;
         }
       }
       @media screen and (max-width: 400px) {
@@ -562,7 +636,6 @@ ul li a {
         #name,
         #mail {
           display: block;
-          /* width: 80%; */
         }
         #name,
         #mail,
@@ -578,6 +651,16 @@ ul li a {
         }
         .foot {
           margin: auto 2.5rem;
+        }
+        .grid_container {
+          grid-template-columns: auto auto;
+        }
+        .grid_container .col img {
+          width: 8rem;
+        }
+        .grid_container .col {
+          padding: 8px;
+          width: max-content;
         }
         @media screen and (max-width: 376px) {
           .carousel-item {
@@ -601,6 +684,19 @@ ul li a {
           }
           .foot {
             margin: auto 2.5rem;
+          }
+          .grid_container {
+            grid-template-columns: auto auto;
+          }
+          .grid_container .col img {
+            width: 7rem;
+          }
+          .grid_container .col {
+            padding: 8px;
+            width: max-content;
+          }
+          .tools .col:hover {
+            padding: 10px;
           }
         }
       }
