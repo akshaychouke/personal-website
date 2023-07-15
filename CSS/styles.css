@@ -23,7 +23,6 @@ body {
   justify-content: space-between;
   transition: all 0.3s ease;
 }
-
 .nvb.sticky {
   position: fixed;
   top: 0px;
@@ -31,7 +30,11 @@ body {
   height: 60px;
   z-index: 1;
 }
-
+.icon a img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
 ul li {
   display: inline-block;
   padding: 20px;
@@ -64,16 +67,6 @@ ul li a:hover {
 .icon a {
   color: #e9e8e8;
   background: none;
-}
-.resume_btn {
-  position: relative;
-  right: 5vw;
-  top: 2.6vh;
-  padding: 11px;
-  border: 2px solid #85cdfd;
-  border-radius: 40px;
-  background-color: #30e3df;
-  text-decoration-line: none;
 }
 
 .active1 {
@@ -131,61 +124,55 @@ ul li a:hover {
 .skills {
   color: white;
 }
-.carousel-item {
-  display: inline-block;
-  height: auto;
-  margin: auto 26rem;
-  /* background-color: #65647c; */
-  padding: 40px;
-  text-align: center;
-  border-radius: 20px;
+.head {
+  margin: auto 70px;
+}
+.carousel-outer-div {
+  margin: auto 70px;
+}
+
+.active {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
 }
 .carousel-item img {
   height: 7rem;
   background: none;
-}
-.skills button {
-  z-index: 0;
-}
-.linux {
-  margin: auto 18rem;
-}
-.react {
-  margin: auto 17.5rem;
-}
-.hcj {
-  margin: auto 15rem;
-}
-.jq {
-  margin: auto 18rem;
-}
-.cpp {
-  margin: auto 18rem;
-}
-.sql {
-  margin: auto 18rem;
+  margin: 0 auto;
 }
 .carousel-item h3 {
-  display: inline-block;
   background: none;
+  text-transform: uppercase;
 }
-.head {
-  margin: auto 70px;
-}
-.carousel-item:hover {
-  padding: 50px;
-  background-color: #ecf2ff;
-  color: black;
+.carousel-item {
+  padding: 40px;
+  text-align: center;
+  border-radius: 50px !important;
+  /* background-color: #65647c; */
 }
 
+.carousel-item:hover {
+  background-color: #ecf2ff;
+  color: black;
+  transform: scale(0.9);
+  border-radius: 20px !important;
+  transition: all 0.6s ease;
+}
 /* Designing the Tools section */
 .tools {
   color: white;
   padding: 50px;
 }
-.tools .col:hover {
-  padding: 20px;
-}
+/* .tools .col:hover {
+  padding: 5px;
+  border: 2px solid #e9e8e8;
+  border-radius: 10px;
+  box-shadow: #ecf2ff 0px 0px 20px 0px;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+  margin: 10px;
+} */
 .grid_container {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
@@ -198,8 +185,10 @@ ul li a:hover {
 }
 .grid_container .col {
   border: 2px solid white;
-  padding: 10px;
-  width: max-content;
+  box-shadow: #ecf2ff 0px 0px 20px 0px;
+  padding: 5px;
+  border-radius: 10px;
+  /* width: max-content; */
 }
 .grid_container .col h5 {
   text-align: center;
@@ -210,14 +199,25 @@ ul li a:hover {
   color: white;
   padding: 50px;
 }
-
+.col .projectCard:hover {
+  transform: scale(1.1);
+  box-shadow: #ecf2ff 0px 0px 20px 0px;
+  margin: 10px;
+  transition: all 0.3s ease;
+}
 /* Designing Honor & Certfications section */
 .cert {
   color: white;
   padding: 50px;
 }
-.cert .card:hover {
-  padding: 30px;
+
+.certCol .card img {
+  height: 15em;
+  width: 100%;
+}
+.cert .card:hover img {
+  transform: scale(0.9);
+  transition: all 0.3s ease;
 }
 
 /* Designing contact section */
@@ -227,95 +227,58 @@ ul li a:hover {
   padding: 50px;
 }
 .frm {
-  margin-left: 20rem;
+  margin: 0 200px;
 }
-#name,
-#mail {
-  width: 40%;
-  height: 45px;
-  border: 2px solid white;
-  border-radius: 10px;
-  color: white;
-  margin-top: 10px;
+form button {
+  margin: 0 2px !important;
+  padding: 10px !important;
+  width: 80px !important;
 }
-#sub,
-#message {
-  display: block;
-  color: white;
+input,
+textarea {
+  background-color: transparent !important;
+  border: none !important;
+  border-bottom: 2px solid #e9e8e8 !important;
+  color: white !important;
 }
-#sub {
-  margin-top: 30px;
-  width: 80%;
-  height: 45px;
-  border: 2px solid white;
-  border-radius: 10px;
-}
-#message {
-  margin-top: 20px;
-  width: 80%;
-  height: 100px;
-  border: 2px solid white;
-  border-radius: 10px;
-  margin-bottom: 30px;
-}
-#submit {
-  border: 2px solid #85cdfd;
-  border-radius: 10px;
-  padding: 20px;
-  margin: auto 22rem;
-  background-color: #2b3467;
-  color: white;
-}
-#submit:hover {
-  background: none;
-}
-input {
-  padding: 20px;
+input:focus,
+textarea:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #e9e8e8 !important;
+  border-bottom: 4px solid #e9e8e8 !important;
 }
 
 /* Designing footer section */
+
 .foot {
-  width: 80%;
-  margin: auto 11rem;
-  padding: 20px;
   background-color: #65647c;
+  margin: auto 30px;
   border-radius: 10px;
+  overflow: hidden;
 }
+.above,
 .list2 {
-  text-align: center;
-  background: none;
-  background-color: #65647c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
 }
 .list2 li {
-  display: block;
-  padding: 10px;
-  background: none;
-}
-ul li a {
-  text-decoration: none;
   list-style: none;
-  color: white;
-  background: none;
+  padding: 10px;
+  background-color: transparent;
 }
-.cpr {
-  text-align: center;
+.list2 li a,
+span {
+  text-decoration: none;
   color: white;
-  background: none;
-}
-.above {
-  background: none;
-  text-align: center;
+  background-color: transparent;
 }
 
 /* Responsiveness */
 @media screen and (min-width: 1280px) and (max-width: 1380px) {
-  .carousel-item img {
-    display: block;
-    margin: auto 14rem;
-  }
-  .carousel-item {
-    margin: auto 20rem;
-  }
   .grid_container {
     grid-template-columns: auto auto auto auto auto;
   }
@@ -336,47 +299,15 @@ ul li a {
     margin-top: 40px;
     text-align: justify;
   }
-  .carousel-item {
-    margin: auto 17rem;
-  }
-  .frm {
-    margin-left: 13rem;
-  }
-  #submit {
-    margin: auto 15rem;
-  }
   .foot {
-    margin: auto 7rem;
-  }
-  .linux {
-    margin: auto 10rem;
-  }
-  .react {
-    margin: auto 9rem;
-  }
-  .hcj {
-    margin: auto 7.5rem;
-  }
-  .jq {
-    margin: auto 10rem;
-  }
-  .cpp {
-    margin: auto 10rem;
-  }
-  .sql {
-    margin: auto 10rem;
+    text-align: center;
   }
   .grid_container {
     grid-template-columns: auto auto auto auto;
     row-gap: 15px;
   }
+
   @media screen and (max-width: 910px) and (min-width: 820px) {
-    .carousel-item {
-      margin: auto 14rem;
-    }
-    .carousel-item img {
-      margin: auto 5rem;
-    }
     .grid_container {
       grid-template-columns: auto auto auto auto;
     }
@@ -402,23 +333,9 @@ ul li a {
       width: 29rem;
       height: auto;
     }
-    .carousel-item {
-      margin: auto 14rem;
-    }
-    .carousel-item img {
-      margin: auto 6rem;
-    }
-    .carousel-item h3 {
-      font-size: 18px;
-    }
-    .frm {
-      margin-left: 10rem;
-    }
-    #submit {
-      margin: auto 10rem;
-    }
     .foot {
-      margin: auto 5rem;
+      margin: auto 20px;
+      text-align: center;
     }
     .grid_container {
       grid-template-columns: auto auto auto;
@@ -434,24 +351,9 @@ ul li a {
         width: 27rem;
         height: auto;
       }
-      .carousel-item {
-        margin: auto 12rem;
-      }
-      .carousel-item img {
-        margin: auto 5.5rem;
-        width: 8rem;
-      }
-      .carousel-item h3 {
-        font-size: 18px;
-      }
-
       .frm {
-        margin-left: 8rem;
+        margin: 0;
       }
-      #submit {
-        margin: auto 9rem;
-      }
-
       .grid_container {
         grid-template-columns: auto auto auto;
       }
@@ -467,21 +369,8 @@ ul li a {
         width: 25rem;
         height: auto;
       }
-      .carousel-item {
-        margin: auto 10rem;
-      }
-      .carousel-item img {
-        margin: auto 3rem;
-        width: 8rem;
-      }
-      .carousel-item h3 {
-        font-size: 18px;
-      }
       .frm {
-        margin-left: 6rem;
-      }
-      #submit {
-        margin: auto 8rem;
+        margin: 0;
       }
       .grid_container {
         grid-template-columns: auto auto auto;
@@ -493,12 +382,6 @@ ul li a {
       }
     }
     @media screen and (max-width: 590px) and (min-width: 520px) {
-      .carousel-item img {
-        margin: auto 2rem;
-      }
-      .carousel-item {
-        margin: auto 8.5rem;
-      }
       .grid_container {
         grid-template-columns: auto auto auto;
       }
@@ -520,25 +403,8 @@ ul li a {
         width: 20rem;
         height: auto;
       }
-      .carousel-item {
-        margin: auto 8.5rem;
-      }
-      .carousel-item img {
-        margin: auto 2rem;
-        /* width: 6rem; */
-        height: 6rem;
-      }
-      .carousel-item h3 {
-        font-size: 18px;
-      }
       .frm {
-        margin-left: 5rem;
-      }
-      #submit {
-        margin: auto 5rem;
-      }
-      .foot {
-        margin: auto 3.5rem;
+        margin: 0;
       }
       .grid_container {
         grid-template-columns: auto auto auto;
@@ -552,37 +418,11 @@ ul li a {
         width: max-content;
       }
       @media screen and (max-width: 490px) and (min-width: 400px) {
-        .carousel-item {
-          margin: auto 7.5rem;
-        }
-        .carousel-item img {
-          margin: auto 1.5rem;
-          height: 4rem;
-        }
-        .carousel-item h3 {
-          font-size: 14px;
-        }
         .head {
           margin: auto 53px;
         }
-        #name,
-        #mail {
-          display: block;
-        }
-        #name,
-        #mail,
-        #sub,
-        #message {
-          width: 100%;
-        }
         .frm {
-          margin-left: 1rem;
-        }
-        #submit {
-          margin: auto 6rem;
-        }
-        #submit:hover {
-          background: none;
+          margin: 0;
         }
         .grid_container {
           grid-template-columns: auto auto auto;
@@ -596,12 +436,6 @@ ul li a {
         }
       }
       @media screen and (max-width: 480px) and (min-width: 400px) {
-        .carousel-item img {
-          margin: auto 0.2rem;
-        }
-        .carousel-item {
-          margin: auto 6.5rem;
-        }
         .grid_container {
           grid-template-columns: auto auto;
         }
@@ -621,37 +455,12 @@ ul li a {
           width: 17rem;
           height: auto;
         }
-        .carousel-item {
-          margin: auto 6rem;
-        }
-        .carousel-item img {
-          margin: auto 0rem;
-          height: 5rem;
-        }
-        .carousel-item h3 {
-          font-size: 14px;
-        }
+
         .head {
           margin: auto 45px;
         }
-        #name,
-        #mail {
-          display: block;
-        }
-        #name,
-        #mail,
-        #sub,
-        #message {
-          width: 100%;
-        }
         .frm {
-          margin-left: 1rem;
-        }
-        #submit {
-          margin: auto 4.5rem;
-        }
-        .foot {
-          margin: auto 2.5rem;
+          margin: 0;
         }
         .grid_container {
           grid-template-columns: auto auto;
@@ -664,27 +473,11 @@ ul li a {
           width: max-content;
         }
         @media screen and (max-width: 376px) {
-          .carousel-item {
-            margin: auto 5.5rem;
-          }
-          .carousel-item h3 {
-            font-size: 14px;
-          }
-          .carousel-item img {
-            margin: auto -1rem;
-            height: 5rem;
-          }
           .outer {
             width: 60vw;
           }
           .frm {
-            margin-left: 2rem;
-          }
-          #submit {
-            margin: auto 3.3rem;
-          }
-          .foot {
-            margin: auto 2.5rem;
+            margin: 0;
           }
           .grid_container {
             grid-template-columns: auto auto;

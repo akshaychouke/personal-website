@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Akshay Chouke</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
   <link rel="stylesheet" href="/CSS/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
@@ -19,15 +21,14 @@
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
 </head>
 
 <body>
-
+  <!-- <i class="fa-solid fa-code-branch fa-2x"></i> -->
   <!-- Navbar Section -->
   <div class="nvb">
     <nav class="nav_bar">
-      <div class="icon"><a href="index.html"><i class="fa-solid fa-code-branch fa-2x"></i></a></div>
+      <div class="icon"><a href="index.html"><img src="../Images/A2.png" alt="icon"></a></div>
       <ul class="list">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -39,7 +40,6 @@
       <div class="left_nav">
         <div class="nav_btn"><i class="fa-solid fa-bars bar_icon"></i></div>
         <div class="nav_btn"><i class="fa-sharp fa-solid fa-xmark close_icon"></i></div>
-        <!-- <a href="resume.pdf" class="resume_btn">Resume</a> -->
       </div>
     </nav>
   </div>
@@ -77,49 +77,49 @@
       <h2>Skills</h2>
       <p>Here are my Skills</p>
     </div>
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active w-50" data-bs-interval="2000">
-          <img src="../Images/linux.png" class="linux" alt="Linux">
-          <h3>Linux</h3>
+    <div class="carousel-outer-div">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="../Images/linux.png" class="linux" alt="Linux">
+            <h3>Linux</h3>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="../Images/react.png" class="react" alt="React Development">
+            <h3>React development</h3>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="../Images/HCJ.png" class="hcj" alt="HTML, CSS, JavaScript">
+            <h3>HTML,CSS And JavaScript</h3>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="../Images/mern_icon.png" class="d-block sql" alt="mern">
+            <h3>MERN STACK</h3>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://cdn.iconscout.com/icon/free/png-512/mysql-3521596-2945040.png?f=avif&w=256"
+              class="d-block sql" alt="mysql">
+            <h3>MySql</h3>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://cdn.iconscout.com/icon/free/png-512/c-4-226082.png?f=avif&w=256" class="d-block cpp"
+              alt="cpp">
+            <h3>C++</h3>
+          </div>
         </div>
-        <div class="carousel-item w-50" data-bs-interval="2000">
-          <img src="../Images/react.png" class="react" alt="React Development">
-          <h3>React development</h3>
-        </div>
-        <div class="carousel-item w-50" data-bs-interval="2000">
-          <img src="../Images/HCJ.png" class="hcj" alt="HTML, CSS, JavaScript">
-          <h3>HTML,CSS And JavaScript</h3>
-        </div>
-        <div class="carousel-item w-50" data-bs-interval="2000">
-          <img src="https://cdn.iconscout.com/icon/free/png-512/jquery-9-1175154.png?f=avif&w=256" class="d-block jq"
-            alt="HTML, CSS, JavaScript">
-          <h3>JQuery</h3>
-        </div>
-        <div class="carousel-item w-50" data-bs-interval="2000">
-          <img src="https://cdn.iconscout.com/icon/free/png-512/c-4-226082.png?f=avif&w=256" class="d-block cpp"
-            alt="HTML, CSS, JavaScript">
-          <h3>C++</h3>
-        </div>
-        <div class="carousel-item w-50" data-bs-interval="2000">
-          <img src="https://cdn.iconscout.com/icon/free/png-512/mysql-3521596-2945040.png?f=avif&w=256"
-            class="d-block sql" alt="HTML, CSS, JavaScript">
-          <h3>MySql</h3>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button type="button" class="carousel-control-prev" data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button type="button" class="carousel-control-next" data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
   </div>
-
 
   <!-- Tools section starts here -->
 
@@ -176,10 +176,23 @@
     </div>
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
-        <div class="card h-100">
+        <div class="card projectCard h-100">
+          <div class="card-body">
+            <h5 class="card-title">AgriMarket E-commerce</h5>
+            <p class="card-text">This is an Ecommerce website named where farmers can sell and buy old
+              farming quipments and accessories like fertilizers etc .</p>
+            <p><a href="https://agrimarketapp.netlify.app/" target="_blank" style="text-decoration-line: none;">Link</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card projectCard h-100">
           <div class="card-body">
             <h5 class="card-title">TODO List </h5>
-            <p class="card-text">This project is development using the React JS liabrary.In this project user can make
+            <p class="card-text">This project is developed using the React JS liabrary.In this project user can make
               List of all the things he has to do.When he complets the task he can also remove that perticular task as
               well. </p>
             <p><a href="https://github.com/imakshay09?tab=repositories" target="_blank"
@@ -187,20 +200,10 @@
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">Hash Genertator</h5>
-            <p class="card-text">This is a tool which is developed in python.Using this tool user can generate six
-              diffrent types of hashes of text at a same time,or he can generate one at time as well. </p>
-            <p><a href="https://github.com/imakshay09/CybersecProjects/blob/main/hash_generator.py" target="_blank"
-                style="text-decoration-line: none;">Link</a></p>
 
-          </div>
-        </div>
-      </div>
+
       <div class="col">
-        <div class="card h-100">
+        <div class="card projectCard h-100">
           <div class="card-body">
             <h5 class="card-title">Directory-BruteForcer</h5>
             <p class="card-text">This is a tool which is developed in python. Using this user can brute force all the
@@ -208,7 +211,30 @@
               that directory.</p>
             <p><a href="https://github.com/imakshay09/CybersecProjects/tree/main/Directory-BruteForcer" target="_blank"
                 style="text-decoration-line: none;">Link</a></p>
+          </div>
+        </div>
+      </div>
 
+      <div class="col">
+        <div class="card projectCard h-100">
+          <div class="card-body">
+            <h5 class="card-title">Recipe-app </h5>
+            <p class="card-text">This is a web application built with react js. On this web, users can search for
+              different recipes which can be made using single food with their ingredients and calories.</p>
+            <p><a href="https://akshay-recipe-app.netlify.app/" target="_blank"
+                style="text-decoration-line: none;">Link</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card projectCard h-100">
+          <div class="card-body">
+            <h5 class="card-title">CRUD-APP</h5>
+            <p class="card-text">In this project I tried to implement the CRUD operations using MERN Stack technologies
+            </p>
+            <p><a href="https://github.com/imakshay09/CRUD-APP" target="_blank"
+                style="text-decoration-line: none;">Link</a></p>
           </div>
         </div>
       </div>
@@ -220,19 +246,31 @@
   <div class="cert" id="cert">
     <div class="crhead" style="margin-bottom: 30px;">
       <h3>Honour & Certfications</h3>
-      <span>Here are some of my Certfications I have received</span>
+      <span>Here are some of my Certfications</span>
     </div>
     <div class="row row-cols-1 row-cols-md-4 g-4">
-      <div class="col">
+
+      <div class="col certCol">
         <div class="card">
-          <img src="../Images/Front_End.png" class="card-img-top" alt="...">
+          <img src="../Images/final.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Meta Front-End Developer Professional Certificate</h5>
+            <p class="card-text"><strong>Issued By Meta at Coursera</strong> <br> May 19, 2023</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col certCol">
+        <div class="card">
+          <img src="../Images/CyberEssentials.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Introduction to Front-End Development</h5>
             <p class="card-text"><strong>Issued By Meta at Coursera</strong> <br> Nov 18,2022</p>
           </div>
         </div>
       </div>
-      <div class="col">
+
+      <div class="col certCol">
         <div class="card">
           <img src="../Images/js.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -241,7 +279,7 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col certCol">
         <div class="card">
           <img src="../Images/vc.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -250,7 +288,8 @@
           </div>
         </div>
       </div>
-      <div class="col">
+
+      <div class="col certCol">
         <div class="card">
           <img src="../Images/cysec.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -270,18 +309,27 @@
       <span>Write your query here </span>
     </div>
     <div class="frm">
-      <form action="">
-        <label for="name"></label>
-        <input type="text" name="name" id="name" placeholder="Name" required>
-        <label for="mail"></label>
-        <input type="email" name="mail" id="mail" placeholder="Email" required>
-        <label for="sub"></label>
-        <input type="text" name="sub" id="sub" placeholder="Subject" required>
-        <label for="message"></label>
-        <input type="text" name="message" id="message" placeholder="Message" required>
-        <label for="submit"></label>
-        <button type="submit" name="submit" id="submit">Submit</button>
+      <form action="" method="post">
+        <div class="mb-3">
+          <label for="name" class="form-label">Enter your name</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Enter your email</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="sub" class="form-label">Enter subject</label>
+          <input type="text" class="form-control" id="sub" name="sub" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Enter your query</label>
+          <textarea class="form-control" id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+        <button type="reset" class="btn btn-danger">Reset</button>
       </form>
+
     </div>
   </div>
 
@@ -304,6 +352,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+    integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="/JS/script.js"></script>
 </body>
 

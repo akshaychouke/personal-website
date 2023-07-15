@@ -22,4 +22,44 @@ $(document).ready(function () {
     backSpeed: 60,
     loop: true,
   });
+
+  //gsap to animate  the about section
+  var tl = gsap.timeline();
+  tl.from(".list li", {
+    opacity: 0,
+    duration: 1,
+    delay: 0.1,
+    y: -60,
+    stagger: 0.1,
+  });
+  tl.from(".left", { opacity: 0, duration: 0.5, x: -60 });
+  tl.from(".right", { opacity: 0, duration: 1, x: 60 });
+
+  //to animate the tools section
+  gsap.from(".tools .col", {
+    scrollTrigger: {
+      trigger: ".grid_container",
+      scroller: "body",
+    },
+    x: -100,
+    scale: 0.7,
+    opacity: 0,
+    delay: 0.5,
+    duration: 2,
+    // stagger: 0.3,
+  });
+
+  //to animate the certificate section
+  gsap.from(".certCol .card", {
+    scrollTrigger: {
+      trigger: ".certCol",
+      scroller: "body",
+    },
+    y: 100,
+    scale: 1,
+    opacity: 0,
+    delay: 0.5,
+    duration: 2,
+    // stagger: 0.3,
+  });
 });
