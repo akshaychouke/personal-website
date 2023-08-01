@@ -62,4 +62,17 @@ $(document).ready(function () {
     duration: 2,
     // stagger: 0.3,
   });
+
+  //to animate the projects section
+  gsap.from(".projects .col", {
+    scrollTrigger: {
+      trigger: ".projects .col",
+      scroller: "body",
+    },
+    y: -100,
+    scale: 0,
+    delay: 0.3,
+    opacity: 0,
+    stagger: 0.3,
+  });
 });
