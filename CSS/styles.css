@@ -15,7 +15,6 @@ body {
   background-color: #332c39;
   font-family: "Poppins", sans-serif;
 }
-
 /* navbar styling */
 .nav_bar {
   display: flex;
@@ -200,11 +199,17 @@ ul li a:hover {
   padding: 50px;
 }
 .col .projectCard:hover {
-  transform: scale(1.1);
+  transform: scale(1);
   box-shadow: #ecf2ff 0px 0px 20px 0px;
-  margin: 10px;
+  /* margin: 10px; */
   transition: all 0.3s ease;
 }
+.card-body p a .btn:hover {
+  background: none !important;
+  color: white !important;
+  border: 1px solid white !important;
+}
+
 /* Designing Honor & Certfications section */
 .cert {
   color: white;
@@ -215,11 +220,15 @@ ul li a:hover {
   height: 15em;
   width: 100%;
 }
-.cert .card:hover img {
-  transform: scale(0.9);
+/* .cert .card:hover img {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+} */
+
+.certCol:hover {
+  transform: scale(1.1);
   transition: all 0.3s ease;
 }
-
 /* Designing contact section */
 
 .contact {
