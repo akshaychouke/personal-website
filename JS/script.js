@@ -32,7 +32,12 @@ $(document).ready(function () {
     y: -60,
     stagger: 0.1,
   });
-  tl.from(".left", { opacity: 0, duration: 0.5, x: -60 });
+  tl.from(".left", {
+    opacity: 0,
+    duration: 1,
+    rotateY: -180,
+    scale: 0.5,
+  });
   tl.from(".right", { opacity: 0, duration: 1, x: 60 });
 
   //to animate the tools section
@@ -54,13 +59,15 @@ $(document).ready(function () {
     scrollTrigger: {
       trigger: ".certCol",
       scroller: "body",
+      // markers: true,
+      start: "top 70%",
     },
     y: 100,
-    scale: 1,
+    scale: 0.5,
     opacity: 0,
     delay: 0.5,
-    duration: 2,
-    // stagger: 0.3,
+    duration: 1,
+    stagger: 0.3,
   });
 
   //to animate the projects section
@@ -68,6 +75,8 @@ $(document).ready(function () {
     scrollTrigger: {
       trigger: ".projects .col",
       scroller: "body",
+      // markers: true,
+      start: "top 70%",
     },
     y: -100,
     scale: 0,
@@ -75,4 +84,20 @@ $(document).ready(function () {
     opacity: 0,
     stagger: 0.3,
   });
+});
+
+//to animate the profile image in the about section
+gsap.to(".left", {
+  scrollTrigger: {
+    trigger: ".left",
+    scroller: "body",
+    scrub: 2,
+    // markers: true,
+    start: "top 10%",
+    // end: "top -3%",
+  },
+  rotation: -45, // Rotate the image diagonally by 45 degrees (adjust as needed)
+  duration: 1, // Duration of the animation in seconds
+  x:-600, // Move the image to the left by 100 pixels (adjust as needed)
+  // ease: "power2.out", // Easing function (adjust as desired)
 });
